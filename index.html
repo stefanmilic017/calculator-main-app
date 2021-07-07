@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body>
+  <div id="fullCalc">
+    <div id="top">
+      <div id="header">
+        <h1 class="headerTop">calc</h1>
+      </div>
+      
+      <div id="theme">
+        <p class="themeText">THEME</p>
+        <div class="picker">
+          <div class="themeNumbering">
+            <span class="numberTheme">1</span>
+            <span class="numberTheme">2</span>
+            <span class="numberTheme">3</span>
+          </div>
+          <div class="themePicker">
+            <input class="themeChoose" type="radio" name="check" id="blue" onclick="changeTheme(this)" checked>
+            <input class="themeChoose" type="radio" name="check" id="white" onclick="changeTheme(this)"> 
+            <input class="themeChoose" type="radio" name="check" id="purple" onclick="changeTheme(this)">
+          </div>   
+        </div>
+      </div>
+    </div>
+
+    <div id="resultScreen">
+      <div data-previous-operand class="previous-number"></div>
+      <div data-current-operand class="current-number"></div>
+    </div>
+
+    <div id="keys" class="grid-container">
+      <button class="grid-item item7 num" data-number = "7">7</button>
+      <button class="grid-item item8 num" data-number = "8">8</button>
+      <button class="grid-item item9 num" data-number = "9">9</button>
+      <button class="grid-item itemDel" data-delete>DEL</button>
+      <button class="grid-item item4 num" data-number = "4">4</button>
+      <button class="grid-item item5 num" data-number = "5">5</button>
+      <button class="grid-item item6 num" data-number = "6">6</button>
+      <button class="grid-item itemPlus ops" data-operation>+</button>
+      <button class="grid-item item1 num" data-number = "1">1</button>
+      <button class="grid-item item2 num" data-number = "2">2</button>
+      <button class="grid-item item3 num" data-number = "3">3</button>
+      <button class="grid-item itemSubtract ops" data-operation>-</button>
+      <button class="grid-item itemDecimal num" data-number>.</button>
+      <button class="grid-item item0 num" data-number = "0">0</button>
+      <button class="grid-item itemDivide ops" data-operation>/</button>
+      <button class="grid-item itemMultiplication ops" data-operation>x</button>
+      <button class="grid-item itemReset" data-reset>RESET</button>
+      <button class="grid-item itemEquals" data-equals>=</button>
+    </div>
+  
+  </div>
+
+  <footer>
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/stefanmilic017" target="_blank">Stefan Milic</a>.</p>
+    </div>
+  </footer>
+    
+ 
+</body>
+
+<script src="jscript.js"></script>
+</html>
